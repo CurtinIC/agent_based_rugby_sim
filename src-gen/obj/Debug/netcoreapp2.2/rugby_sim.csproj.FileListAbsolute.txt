@@ -1,0 +1,10 @@
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/bin/Debug/netcoreapp2.2/rugby_sim.deps.json
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/bin/Debug/netcoreapp2.2/rugby_sim.runtimeconfig.json
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/bin/Debug/netcoreapp2.2/rugby_sim.runtimeconfig.dev.json
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/bin/Debug/netcoreapp2.2/rugby_sim.dll
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/bin/Debug/netcoreapp2.2/rugby_sim.pdb
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/obj/Debug/netcoreapp2.2/rugby_sim.csprojAssemblyReference.cache
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/obj/Debug/netcoreapp2.2/rugby_sim.AssemblyInfoInputs.cache
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/obj/Debug/netcoreapp2.2/rugby_sim.AssemblyInfo.cs
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/obj/Debug/netcoreapp2.2/rugby_sim.dll
+/home/marrabld/projects/eclipse-workspace/rugby_sim/src-gen/obj/Debug/netcoreapp2.2/rugby_sim.pdb

@@ -1,0 +1,44 @@
+{
+	"globals": {
+		"steps" : 250,
+		"output": "csv",
+		"options": {
+			"delimiter": ";",
+			"format": "en-EN"
+		}
+	},
+	"layers": [
+		{
+			"name":"Grassland",
+			"file":"grid.csv",
+			"dimensionx": 500,
+			"dimensiony": 500
+		}
+	],
+	"agents": [ {
+      "name":"Wallaby",
+      "count":3,
+      "mapping": [
+      	{
+      		"parameter" : "speed",
+      		"value" : 1
+      	},
+      	{
+      		"parameter" : "has_ball",
+      		"value" : true
+      	}
+      ]
+	},
+		    {
+      "name":"AllBlack",
+      "count":10,
+      "mapping": [
+      	{
+      		"parameter" : "speed",
+      		"value" : 1.5
+      	}
+      ]
+} 
+
+  ]
+}

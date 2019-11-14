@@ -1,0 +1,15 @@
+import numpy as np
+import pandas as pd
+import pylab
+
+
+w_df = pd.read_csv('Wallaby.csv', delimiter=';')
+a_df = pd.read_csv('AllBlack.csv', delimiter=';')
+
+print(w_df.head())
+
+print(w_df.keys())
+
+pylab.plot(w_df['0_Position'], w_df['1_Position'], 'o--', alpha=0.7, color='green')
+pylab.plot(a_df['0_Position'], w_df['1_Position'], '*--', alpha=0.7, color='black')
+pylab.show()

@@ -1,0 +1,77 @@
+model rugby_sim
+
+use Mars
+
+grid-layer Grassland as grass
+
+agent Wallaby on Grassland{
+	observe var Rule = ""
+
+	external observe var speed : integer
+	var has_ball : bool
+	
+	initialize{
+		//Spawn somewhere in the grid when the simulation starts
+		pos at #(random(250), 5)
+		has_ball = true
+		speed = 1
+	}
+	
+	tick{
+		Move()
+	}
+	
+	def Move(){
+		move me 1 to #(xcor, ycor + speed)
+	}
+	
+	def Pass(){
+		has_ball = false
+	}
+	
+	passive Hit(){
+		kill me
+	}
+	
+	passive GetHasBall() : bool {
+			return has_ball
+		}
+}
+
+agent AllBlack on Grassland{
+	observe var Rule = ""
+
+	external observe var speed : real
+
+	
+	initialize{
+		println 'Initializing'
+		pos at #(random(200), random(10))
+		speed = 0.2
+
+	}
+	
+	tick{
+		Run()
+	}
+	
+	def Run(){
+
+		var nearestWallaby = nearest Wallaby
+	
+		if(nearestWallaby.GetHasBall()){
+			move me 1 * speed to nearestWallaby 
+		}
+		
+		var distanceNearestWallaby = distance nearestWallaby
+		if(distanceNearestWallaby <= 1.0){
+			Tackle(nearestWallaby)
+		}
+	}
+	
+	def Tackle(nearestWallaby : Wallaby) {
+		println 'Gotcha!!'
+        nearestWallaby.Hit()
+
+	}
+}
